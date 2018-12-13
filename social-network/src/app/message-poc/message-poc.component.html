@@ -1,3 +1,12 @@
-<p>
-  message-poc works!
-</p>
+<section id="mainImageSection">
+	
+	<input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+	
+	<button type="button" class="btn btn-success btn-s"
+		(click)="uploadImage()"
+		[disabled]="!uploader.getNotUploadedItems().length">Upload
+		an Image</button>
+		
+	<img alt="" [src]="mainImgUrl">
+	
+</section>
