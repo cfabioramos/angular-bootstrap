@@ -6,7 +6,14 @@
 		(click)="uploadImage()"
 		[disabled]="!uploader.getNotUploadedItems().length">Upload
 		an Image</button>
-	<br>		
-	<img alt="" [src]="mainImgUrl" width="50%" height="50%">
+	<br>
+	<section id="mainImageEdition" class="container">
+		<!-- div class="row">
+			<div class="col align-self-center">
+      			<img alt="" [src]="mainImgUrl" class="img-fluid">
+    		</div>
+		</div -->
+		<img [src]="mainImgUrl" class="img-fluid rounded mx-auto d-block" alt="...">
+	</section>
 	
 </section>
